@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>suva – tech fixer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">MyDigitalPortFolio</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#Certificates">Certificates</a></li>
+      <li><a href="#Contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="profile-photo-container">
+      <img src="pp.jpg " alt="Suva Profile photo" class="profile-photo">
+    </div>
+    <h1>Hello I'm <span>Suvalakshmi Pandiyan</span></h1>
+    <p>
+
+"Hi, I’m Suvalakshmi — a Tech Fixer with a vision. I specialize in identifying problems and turning them into powerful, working solutions. I’m honing my skills in Java and HTML to build applications that are both functional and user-friendly. My goal is to become a problem solver and a programmer who creates tools that simplify lives, automate tasks, and introduce fresh ideas into the digital space. With the right support, I’m ready to transform concepts into impactful products that people can use every day."
+</p>
+    <a class="btn" href="#Certificates">See Certificates </a>
+
+  <!-- Resume button -->
+     <a class="btn resume-btn" href="resume.png" target="_blank">
+      View Resume</a>
+  </section>
+
+  <section class="Certificates" id="Certificates">
+     
+     </h2>Certificates</h2>
+  <div class="certificate-grid">
+    <div class="certificate-card" onclick="openCertificate('certificate-1.jpg')">🚀 Certificate 1</div>
+    <div class="certificate-card" onclick="openCertificate('certificate-2.jpg')">💻 Certificate 2</div>
+  </div>
+</section>
+
+<!-- Modal for certificates -->
+<div id="certificateModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="certificateImg">
+</div>
+
+    </div> 
+  </section>
+
+  <section class="Contact" id="Contact">
+    <h2>Contact me</h2>
+    <form id="Contact-form">
+      <input id="name" type="Text" placeholder="Your Name">
+      <input id="email" type="Email" placeholder="Your Email">
+      <textarea id="Message" rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+      <p id="form-status"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
